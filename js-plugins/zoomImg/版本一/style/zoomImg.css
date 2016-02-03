@@ -1,0 +1,33 @@
+.imgZoom{
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+.imgZoom img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.imgZoom .zoomIn, .imgZoom .zoomOut, .imgZoom .zoomOrg{
+    position: absolute;
+    top: 270px;
+    width: 50px;
+    height: 25px;
+    line-height: 17px;
+    font-size: 13px;
+}
+.imgZoom .zoomIn{
+    left: 150px;
+}
+.imgZoom .zoomOut{
+    left: 200px;
+}
+.imgZoom .zoomOrg{
+    left: 250px
+}

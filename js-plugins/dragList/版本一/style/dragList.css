@@ -1,0 +1,8 @@
+body,div,h2,ul,li{margin:0;padding:0;}
+body{font:12px/1.5 Arail;}
+.dragList{width:860px;margin:10px auto;background:#eee;border:1px solid #b8b8b8;overflow:hidden}
+.title{height:30px;line-height:30px;font-size:14px;padding:0 15px 0 35px;border-bottom:1px solid #b8b8b8;}
+.dragList ul{float:left;padding:0 15px 15px 0;width: 830px;}
+.dragList li{width: 830px;height: 30px;line-height: 30px;background:#fff;border:1px solid #c3c3c3;margin:15px 0 0 15px;list-style:none;text-indent: 10px;font-size: 15px;}
+
+.dragList li.hig{border:2px dashed #f30;opacity:0.5;filter:alpha(opacity=50);}

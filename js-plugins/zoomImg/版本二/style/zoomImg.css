@@ -1,0 +1,43 @@
+.imgZoom{
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+.imgZoom .imgObj{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+/*设置缩放按钮的背景图片*/
+.imgZoom .zoomOut img, .imgZoom .zoomOrg img{ 
+    width: 32px;
+    height: 32px;
+    
+}
+/*由于给的图片中放大和缩小这两个图片大小不一致，所以另外写了放大按钮的图片宽高。
+还有就是如果美工给的图大小合适直接通过background设置背景图而不是添加img标签的方法会省事很多！！！*/
+.imgZoom .zoomIn img{
+	width: 64px;
+	height: 64px;
+}
+.imgZoom .zoomIn{
+	position: absolute;
+    bottom: 3px;
+    right: 100px;
+}
+.imgZoom .zoomOut{
+	position: absolute;
+    bottom: 20px;
+    right: 65px;
+    
+}
+.imgZoom .zoomOrg{
+	position: absolute;
+    bottom: 20px;
+    right: 15px;
+    
+}

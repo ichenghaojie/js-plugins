@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>javascript控制图片拖拽缩放</title>
+        <link rel="stylesheet" type="text/css" href="style/zoomImg.css">
+        <script type="text/javascript" language="javascript" src="js/zoomImg.js"></script>
+    </head>
+    <body>
+        <div class="imgZoom" ></div>
+         
+        <div class="imgZoom"></div>
+        <!-- 我这里以创建一个button标签为例，网页中可能是一个div. -->
+        <button >切换图片</button>
+        <script type="text/javascript"> 
+        
+            var imgBox=getClass('imgZoom');
+            var oSrc = ['images/1.jpg','images/1.jpg'];
+            var obuttons = ['images/zoomIn.png','images/zoomOut.png','images/zoomOrg.png'];
+            var aExample = [];
+            for(var i=0; i<imgBox.length;i++){
+                var oExample = new imgZoom(imgBox[i], oSrc[i], obuttons);
+                //将控件对象存入数组中
+                aExample.push(oExample);
+            }
+            
+            //更换图片需要在这做事件绑定，首先你要找到那个button，第一个button对应第一个控件对象，
+            //所以这里第一个button被点击时,第一个控件对象调用他自己的函数changeImg，传入新图片的地址。
+            //在网页中你需要自己实现这个事件绑定。
+            document.getElementsByTagName('button')[0].onclick = function () {
+                aExample[0].changeImg('images/2.jpg')
+            };
+        </script>
+        
+    </body>
+</html>
