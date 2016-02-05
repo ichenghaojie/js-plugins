@@ -1,4 +1,6 @@
 # 上传一些自己写的JS插件
+<a href="http://1.jspluginspage.applinzi.com/">在线预览</a>
+
 dragList是一个可以拖拽列表以此来改变顺序的插件，
 两个版本给出了不同的效果。
 
